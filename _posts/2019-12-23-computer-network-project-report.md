@@ -1,13 +1,10 @@
 ---
-title: Post with Header Image
-tags: TeXt
+title: IP Over DNS Project Report
+tags: [ComputerNetwork, python, tun, DNS]
+key: ComputerNetworkProjectReport
 ---
 
-# IP Over DNS Project Report
-
 ## Background
-
-这里原理部分用中文表述方便很多，我们决定用中文解释
 
 ### Tun interface, Tun tunnel
 
@@ -27,7 +24,7 @@ tags: TeXt
 
 ### The network topology
 
-![image-20200107031310125](report.assets/image-20200107031310125.png)
+![image-20200107031310125](/assets/leitianjian_blog/ComputerNetworkProjectAssets/image-20200107031310125.png)
 
 ### Solutions
 
@@ -98,11 +95,11 @@ For this part, I take some picture from presentation powerpoint.
 
 #### Client
 
-<img src="report.assets/image-20200107023541302.png" alt="image-20200107023541302" style="zoom:67%;" />
+<img src="/assets/leitianjian_blog/ComputerNetworkProjectAssets/image-20200107023541302.png" alt="image-20200107023541302" style="zoom:67%;" />
 
 #### Server
 
-<img src="report.assets/image-20200107025101984.png" alt="image-20200107025101984" style="zoom: 80%;" />
+<img src="/assets/leitianjian_blog/ComputerNetworkProjectAssets/image-20200107025101984.png" alt="image-20200107025101984" style="zoom: 80%;" />
 
 The code is well committed, which is easy to see the implementation.
 
@@ -115,19 +112,9 @@ Here are two little **performance optimization** in the program
 
 ​	We test the program by ping in each side and ssh tunneling, we also test the program with iptables set. However, my local computer is a remote host, I just set some specific routing rule to test whether it can ping through DNS tunneling.
 
-![image-20200107022949687](report.assets/image-20200107022949687.png)
+![image-20200107022949687](/assets/leitianjian_blog/ComputerNetworkProjectAssets/image-20200107022949687.png)
 
 Here I only put my test of SSH. Ping by each side was tested in presentation.
-
-## Contribution
-
-11711707 雷天健：Finding material about Tun device and DNS tunneling. Server side coding and integration testing of the code
-
-11712639 王冬青：Finding material about Tun device and DNS tunneling. Client side coding,  made the presentation PowerPoint and wrote README file.
-
-11712641 邹萱萱：Finding material about Tun device and DNS tunneling. Client side coding and report writing.
-
-In a word, every member had contributed a lot in this project. So, the result should be the same
 
 ## Conclusion
 
